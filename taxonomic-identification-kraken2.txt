@@ -1,6 +1,0 @@
-Isolate	Family	Genus	Species
-Isolate_1	Paenibacillaceae (15.63%)	Paenibacillus (15.52%)	Paenibacillus sp. 37 (1.81%)
-Isolate_2	Paenibacillaceae (19.14%)	Paenibacillus (18.97%)	Paenibacillus sp. 37 (2.43%)
-Isolate_3	Paenibacillaceae (19.55%)	Paenibacillus (19.38%)	Paenibacillus sp. 37 (2.48%)
-Isolate_7	Microbacteriaceae (22.59%)	Leifsonia (10.75%)	Leifsonia xyli (4.85%)
-Isolate_11	Intrasporangiaceae (1.35%)	Janibacter (0.24%)	Janibacter indicus (0.08%)
