@@ -1,0 +1,6 @@
+	domain	phylum	class	order	family	genus
+Isolate_1-16S_rRNA	NODE_28_length_1476_cov_514.378842	20-1474	(-)	Bacillales	Paenibacillaceae 1	Paenibacillus
+Isolate_2-16S_rRNA	NODE_23_length_1476_cov_584.751966	20-1474	(-)	Bacillales	Paenibacillaceae 1	Paenibacillus
+Isolate_3-16S_rRNA	NODE_23_length_1476_cov_685.847748	20-1474	(-)	Bacillales	Paenibacillaceae 1	Paenibacillus
+Isolate_7-16S_rRNA	NODE_8_length_193085_cov_77.338805	4390-5912	(-)	Micrococcales	Microbacteriaceae	Leifsonia
+Isolate_11-16S_rRNA	NODE_28_length_5011_cov_164.011147	3373-4894	(-)	Micrococcales	Dermacoccaceae	Flexivirga

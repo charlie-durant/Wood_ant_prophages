@@ -1,0 +1,273 @@
+\documentclass[11pt,letterpaper]{article} % font size, page size(document type)
+\usepackage[top=0.85in,left=0.85in,footskip=0.85in,marginparwidth=2in]{geometry} % this line changes page layout options e.g. margin widths
+
+% use Unicode characters - try changing the option if you run into troubles with special characters (e.g. umlauts)
+\usepackage[utf8]{inputenc}
+
+\usepackage{ragged2e} % options for text alignment
+
+\usepackage{natbib}%citations with natbib package
+\bibliographystyle{agsm} % a harvard style
+
+\usepackage{lscape} % allows you to change page orientation (\begin{landscape} and \end{landscape}
+
+% hyperref makes references clicky. use \url{www.example.com} or \href{www.example.com}{description} to add a clicky url
+\usepackage{nameref,hyperref}
+
+% line numbers
+\usepackage[right]{lineno} % put line numbers in right margin
+
+% improves typesetting in LaTeX
+\usepackage{microtype}
+\DisableLigatures[f]{encoding = *, family = * }
+
+% text layout - change as needed
+%\raggedright % makes lines uneven on right side (i.e. not justified)
+\setlength{\parindent}{0.0cm} % paragraph indentation 0cm (no indent)
+\textwidth 6.6in 
+\textheight 8.75in
+\setlength{\parskip}{1em} %sets the paragraph separation to 1em (em equals the length of the "m" in the current font)
+
+% Remove % for double line spacing
+%\usepackage{setspace} 
+%\doublespacing
+
+% use adjustwidth environment to exceed text width
+\usepackage{changepage}
+
+% adjust caption style
+\usepackage[aboveskip=1pt,labelfont=bf,labelsep=period,singlelinecheck=off]{caption}
+
+% remove brackets from references
+%\makeatletter
+%\renewcommand{\@biblabel}[1]{\quad#1.}
+%\makeatother
+
+% headrule, footrule and page numbers
+\usepackage{lastpage,fancyhdr,graphicx}
+\usepackage{epstopdf}
+\pagestyle{myheadings}
+\pagestyle{fancy} % clears the header and footer, otherwise the elements of the default "plain" page style will appear.
+\fancyhf{}
+\rfoot{\thepage/\pageref{LastPage}}
+\renewcommand{\footrule}{\hrule height 2pt \vspace{2mm}}
+\fancyheadoffset[L]{2.25in}
+\fancyfootoffset[L]{2.25in}
+
+% use \textcolor{color}{text} for colored text (e.g. highlight to-do areas)
+\usepackage{color}
+
+% define custom colors (this one is for figure captions)
+\definecolor{Gray}{gray}{.25}
+
+% this is required to include graphics
+\usepackage{graphicx}
+
+% this is required for certain symbols e.g. mu
+\usepackage[euler]{textgreek}
+% this package is used for standard form and superscript/subscript units
+\usepackage{siunitx}
+
+% use if you want to put caption to the side of the figure - see example in text
+\usepackage{sidecap}
+
+% used for having text wrap around figures
+\usepackage{wrapfig}
+\usepackage[pscoord]{eso-pic}
+\usepackage[fulladjust]{marginnote} % allows you to write notes in the margins
+\reversemarginpar % prints the note in the opposite margin
+
+% document begins here
+\begin{document}
+\vspace*{0.35in} % add vertical space - do not remove vertical space at page end
+
+% title goes here:
+\begin{flushleft} % align left & not ragged 
+{\Large
+\textbf\newline{Wood ants and prophages draft chapter}
+}
+\newline
+% authors go here:
+\\
+Charlie Durant
+
+\\
+\bigskip
+University of Leicester
+\\
+\bigskip
+
+\end{flushleft} % end left alignment
+
+\section*{Abstract}
+Abstract goes here
+
+\clearpage
+
+% now start line numbers
+\linenumbers
+
+% the * after section prevents numbering
+\section*{Introduction}
+
+Introduction notes:
+\begin{itemize}
+
+    \item What is known about the microbial associations of \textit{F. rufa} and close relatives?
+    \begin{itemize}
+        \item 16S study \citet{kaczmarczyk-ziemba_first_2020} (Formica polyctena)
+        \begin{itemize}
+            \item Acetobacteraceae; Average relative abundance 3.65\% across 6 samples of Formica polyctena
+            \item Lactobacillus; Average relative abundance 2.4\% across 6 samples of Formica polyctena 
+           \item Acinetobacter; Average relative abundance 0.13\% across 6 samples of Formica polyctena
+           \item Sphingomonas; Average relative abundance  0.37\% across 6 samples of Formica polyctena 
+        \end{itemize}
+        
+        \item Wolbachia; sharing of Wolbachia strains by F. rufa species is due to horizontal rather than vertical transmission \citep{viljakainen_wolbachia_2008} 
+    \end{itemize}
+    
+ \item What is known about the disease resistance mechanisms of these ants?
+ \begin{itemize}
+     \item Streptomyces sp. - Actinomycete strain SFA3 (99\% identity to Streptomyces rochei) isolated from surface-sterilised ground Formica yessensis). This strain was shown through LC/MS to produce antibiotics \citep{du_formicins_2020}
+ \end{itemize}
+ 
+ \item Known bacterial pathogens
+ \begin{itemize}
+     \item \citet{chapuisat_wood_2007} - \textit{Pseudomonas fluorescens} previously isolated from \textit{Formica paralugubris} nest material; shown to reduce survival.  
+ \end{itemize}
+ 
+\item What is known about the natural history of \textit{F. rufa}?
+\begin{itemize}
+    \item Distribution of \textit{F. rufa} in UK and Europe
+    \item Info about Harlestone Firs population - introduction and spread - supercolony?
+\end{itemize}
+
+\item Prophage induction
+\begin{itemize}
+    \item Dietary prophage inducers paper showing bee propolis induces prophages \citep{rubin_dietary_2019}
+\end{itemize}
+
+\item Propose hypothesis that prophages in bacteria pathogenic to ants are induced by ant-collected materials e.g. pine needles, tree resin, substances from ant glands.
+
+\end{itemize}
+
+
+\section*{Materials and Methods}
+
+\subsection*{Sample collection}
+
+\textit{F. rufa}, nest material (pine needles and resin) and soil within 1m radius of a nest were collected in September 2020 from Harlestone Firs, a forested area of predominantly fir trees (Harlestone Road, New Duston, Northampton, UK; GPS coordinates: 52.267750, -0.955719). Samples were collected by depositing ants, nest material and soil separately into clean zip-loc plastic bags, sealed and stored at -20$^{\circ}$C until further use. 
+
+\subsection*{Isolation and sequencing of bacteria}
+Preparation of samples for isolation took place using aseptic technique. Samples were placed into 1ml Eppendorph tubes and crushed using a pestle into 10$\mu$L or 100$\mu$L PBS and vortexed for 30s, and the liquid was transferred onto agar plates. A variety of media were used including nutrient agar, Trypticase Soy Agar (TSA), MRS and modified AE medium (8g/L yeast extract, 15g/L peptone, 10g/L D-glucose, 5mL/L ethanol (99.8\%), 3mL/L acetic acid, final pH 3.5). Plates were supplemented with 0.1g/L cycloheximide to inhibit growth of fungi, and incubated for 7 days at\SI{30}{\celsius} either in aerobic conditions or in semi-anaerobic Candlewick jars. Colonies with distinct morphologies were re-streaked onto fresh agar plates and colony PCR performed. Single colonies were picked with a sterile pipette tip which was used as template by dipping into 50 $\mu$ L 1x PCR master mix (DreamTaq Green PCR Master Mix; ThermoFisher) with primers 27F (5'-AGAGTTTGATCCTGGCTCAG-3') and 530R (5'-CCGCNGCNGCTGGCAC-3') or 1492R (5'-GGTTACCTTGTTACGACTT-3'). The primer pair 27F-530R amplify a ~500bp region of the 16S rRNA gene spanning hypervariable regions V1 to V3, whereas 27F-1492R amplify a ~1500bp region spanning the entire 16S rRNA gene from V1 to V9. PCR conditions were as follows: 1 cycle of \SI{95}{\celsius} for 15 min; 35 cycles of: \SI{95}{\celsius} for 30s, \SI{55}{\celsius}, \SI{72}{\celsius} for 2 minutes; 1 cycle of \SI{72}{\celsius} for 5 minutes; pause at \SI{4}{\celsius}. 5µL from each PCR reaction was run on a 1\% agarose gel at 80V for 60 mins to determine whether a band was present at ~500bp. Where a single band of ~500bp was obtained and where the corresponding no-template control did not produce any bands, PCR reactions were purified using the [insert kit] kit. Purified DNA was quantified using Qbit HS DNA Assay kit and sent for Sanger Sequencing with GATC. Single colonies from re-streaked plates were inoculated into liquid media and grown to an OD of 0.8-1.2, from which glycerol stocks were made for long-term storage, with a final concentration of 30\% glycerol. To extract genomic DNA, glycerol stocks were used to create fresh streak-plates from which colonies were picked and used to inoculate 12.5 mL liquid media in a 50 mL falcon tube and grown at \SI{30}{\celsius} for 24h. Genomic DNA was extracted using the Qiagen Blood and Tissue Kit, with the enzymatic lysis pre-treatment step included. DNA was quantified using Qbit HS DNA Assay and stored at -\SI{20}\celsius. Purified genomic DNA was sent to MiGS (Pittsburgh, USA) for whole genome sequencing. 
+
+\subsection*{Predicting prophages in genomes}
+Whole genome sequences of bacteria were input into PHASTER \citep{arndt_phaster:_2016} to predict prophages. 
+
+\subsection*{Optimising bacterial growth}
+To determine required growth conditions, growth curves were produced for each isolate by inoculating an overnight culture into a 96 well micro-plate containing sterile media. Growth was monitored using a Varioskan machine, by measuring changes in OD every 30 minutes over 48h. 
+
+From \citep{rubin_dietary_2019}:
+The PMAnalyzer pipeline was used to analyze the growth curves. The PMAnalyzer pipeline receives OD files from the microtiter plate reader as an input and uses the SciPy Python numerical library to model each growth curve. Each growth curve was fitted with the Zwietering model to predict the y0 (OD600 nm where growth begins), lag time, maximum growth rate, and biomass yield. 
+Differences between growth curves were analyzed by comparing experimental wells to controls using a method similar to one developed by Firsov who determined that the antimicrobial effect of any compound could be measured by directly comparing the growth of cells when the compound is present or absent. Some compounds were excluded from the heatmap analysis because they formed precipitates in the wells or were too opaque to accurately measure OD600 nm. Although these compounds could not be used for growth curve analyses, they were suitable for flow cytometry.
+
+\subsection*{Antimicrobial effect of formic acid}
+The effect of \textit{F. rufa} venom on bacterial growth was investigated using artificial venom composed of [insert venom composition]. [insert venom composition refs]
+
+\begin{itemize}
+    \item Note: Natural venom will be collected from ants by sampling workers from nests in the field and placing small groups of workers into eppendorph tubes. Tubes containing workers will be taken back to the laboratory and left undisturbed at room temperature for 4 hours so that ants can replenish their venom vesicles. Tubes containing ants will shaken to encourage ants to release their venom, after which they will be anaesthetised by placing tubes at -\SI{20}{\celsius} for 20 minutes. Tubes will be left at room temperature for 5 minutes and centrifuged at [insert speed] to collect venom, which will be pippetted from the base of the tube.  
+    
+\end{itemize}
+
+
+\subsection*{Prophage induction - planned work}
+Methods from \citep{rubin_dietary_2019}. Bacteria were cultured in the presence of each of the test compounds for 24 h in 96-well plates. A single colony from each isolate was used to inoculate a 3 mL liquid overnight culture, and 140 μL of diluted overnight culture (1:10 in media) was then mixed with 10 μL of test compound solution. For isolates requiring anaerobic conditions, volumes were doubled and 96-well plates sealed with film to promote anaerobic conditions. The following controls were included: media alone (media control), bacteria in media without test compound (bacterial viability control), and each diluent used for the various test compounds. Using a Varioskan plate reader/incubator, optical density (OD) at 600 nm (OD600 nm) was measured every 10 min. Each test was accompanied by a positive “induction” control of carbadox (Sigma-Aldrich) at a range of final concentrations.
+
+\subsection*{Nanocyte/phage induction}
+
+
+
+\subsection*{Effect of bacteria on ant survival - Planned work}
+Methods from \citet{chapuisat_wood_2007}.
+We recorded the survival of adult workers or larvae when exposed to each bacterium, compared with a bacteria-free control. Single workers were kept in 5.5 cm diameter Petri dishes with a filter paper at the bottom. The ants were provided with ad libitum 8\% sugar water. Each control and treatment group had 20 replicates. 0.5 ml of peptone solution containing each bacterium at a concentration of \num{4e9} CFU ml\si{^-^1} was deposited in the centre of the filter paper, close to but not on the ant. The challenge-free controls received 0.5 ml of peptone solution. The entire filter paper became damp, so that the individuals probably came into direct contact with the micro-organisms, as infection is likely to occur through oral or cuticular contact.
+
+The impact of potential pathogens on the survival of larvae was tested by placing three larvae in small artificial nests made of 9 cm circular plastic boxes with a filter paper covering the bottom of the nest and a central layer of plaster connected to a small underneath water reservoir (Passera et al. 1988). The nest was covered with a dark plastic flowerpot and placed in a 19×14 cm foraging arena lined with fluon to prevent escape. We provided sugar water and a protein-rich jelly made of honey, eggs and agar. Fifteen workers fed and tended the larvae. The design of these experiments was similar to that of the single adult workers, except the concentrations of micro-organisms (10\si{^1^1} CFUml\si{^-^1}), which was adapted to the larger box size and higher number of individuals. All experiments took place at \SI{25}{\celsius}. We recorded the survival of single adult workers and larvae on a daily basis, over 20 and 11 days, respectively, and removed corpses to prevent contamination. 
+
+\section*{Results}
+\subsection*{16S Colony PCR}
+Isolates were identified using 16S Colony PCR prior to whole genome sequencing to ensure bacterial origin as some fungi are resistant to cyclohexamide.  
+
+\newpage
+\begin{landscape}
+\begin{table}[]
+\begin{tabular}{lllll}
+\textbf{Isolate \#} & \textbf{Isolation media}  & \textbf{Isolation conditions} & \textbf{Sample} & \textbf{Closest identity (Variable region)}                  \\
+1          & Nutrient agar         & 30°C aerobic                           & Crushed ants & Paenibacillus sp. (V1-V9)                          \\
+2          & Nutrient agar         & 30°C aerobic                           & Crushed ants & Paenibacillus sp. (V1-V9)                          \\
+3          & Nutrient agar         & 30°C aerobic                           & Crushed ants & Paenibacillus sp. (V1-V9)                          \\
+4          & Acetic acid agar (A)  & 30°C aerobic                           & Crushed ants & Psychrobacillus psychrodurans (V1-V9)              \\
+14         & Nutrient agar         & 30°C anaerobic jar                     & Crushed ants & Bacillus sp. (V1-V9)                               \\
+15         & Acetic acid agar (A)  & 30°C anaerobic jar                     & Crushed ants & Lactobacillus sanfranciscensis (V1-V3)             \\
+16         & Acetic acid agar (B)  & 30°C anaerobic jar                     & Crushed ants & Lactobacillus sanfranciscensis (V1-V3)             \\
+17         & Acetic acid agar (B)  & 30°C anaerobic jar                     & Crushed ants & Lactobacillus sanfranciscensis (V1-V3)             \\
+18         & Tryptic soy agar      & 30°C anaerobic jar                     & Crushed ants & Paenibacillus sp. (V1-V9)                          \\
+19         & Tryptic soy agar     & 30°C anaerobic jar                     & Crushed ants & Sporosarcina sp. (V1-V9)                           \\
+20         & Nutrient agar         & 30°C anaerobic jar                     & Crushed ants & Lactobacillus sanfranciscensis (V1-V3)             \\
+10         & Tryptic soy agar      & 30°C aerobic                           & Nest         & Curtobacterium sp. (Phylum Actinobacteria) (V1-V3) \\
+11         & Tryptic soy agar      & 30°C aerobic                           & Nest         & Dermacoccus sp. (Phylum Actinobacteria) (V1-V3)    \\
+12         & Acetic acid agar (B)  & 30°C aerobic                           & Nest         & Lactobacillus sanfranciscensis (V1-V3)             \\
+13         & Acetic acid agar (B)  & 30°C aerobic                           & Nest         & Lactobacillus sanfranciscensis (V1-V3)             \\
+28         & Nutrient agar         & 30°C anaerobic jar                     & Nest         & Bacillus sp. (V1-V9)                               \\
+76         & Nutrient agar         & 30°C anaerobic jar                     & Nest         & Bacillus sp. (V1-V9)                               \\
+92         & Nutrient agar         & 30°C aerobic                           & Nest         & Paenibacillus sp. (V1-V9)                          \\
+7          & Acetic acid agar (A)  & 30°C aerobic                           & Soil         & Lysinimonas sp. / Leifsonia sp. (V1-V9)           
+\end{tabular}
+\caption{Table showing isolation conditions and closest identities from BLAST searching sequenced 16S rRNA variable regions.}
+\label{tab:16s-table}
+\end{table}
+\end{landscape}
+\newpage
+
+\subsection*{WGS}
+
+Something about something
+
+<<echo=FALSE, cache = TRUE>>=
+
+@
+
+\section*{Discussion}
+\subsection*{Subtitle}
+Discussion goes here
+
+%\clearpage
+
+\section*{Supporting Information}
+%If you intend to keep supporting files separately you can do so and just provide figure captions here. Optionally make clicky links to the online file using \verb!\href{url}{description}!.
+
+%These commands reset the figure counter and add "S" to the figure caption (e.g. "Figure S1"). This is in case you want to add actual figures and not just captions.
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{S\arabic{figure}}
+
+% You can use the \nameref{label} command to cite supporting items in the text.
+\subsection*{S1 Figure}
+\label{example_label}
+{\bf Caption of Figure S1.} \textbf{A}, If you want to reference supporting figures in the text, use the \verb!\nameref{}!. command. This will reference the section's heading: \nameref{example_label}.
+
+% if you want to include a video
+%\subsection*{S2 Video}
+%\label{example_video}
+%{\bf Example Video.} Use \href{www.youtube.com}{clicky links} to the online sources of the files.
+
+%\clearpage
+
+\section*{Acknowledgments}
+
+\nolinenumbers
+
+\clearpage
+
+\bibliography{zotero_refs.bib} %print reference list
+
+\end{document}
+
